@@ -1,6 +1,7 @@
 problem: 150. Evaluate Reverse Polish Notation
 link: https://leetcode.com/problems/evaluate-reverse-polish-notation/
 
+Java solution:
 ```
 class Solution {
     public int evalRPN(String[] tokens) {
@@ -30,3 +31,9 @@ class Solution {
     }
 }
 ```
+Learning:
+parseInt(): This method return the integer value represented by a string argument
+Here when any number or integer(other than operator +,-,*,/) came, then we convrt that token or character to integer and push it into stack.
+When +/* then pop two value and simply + or *  repectively
+when -, here we need to subtract top value of stack from second top value i.e if a is peek of stack and b is second peek then b-a
+simillarly in / we divide first peek value of stack to second peek i.e. b/a;
